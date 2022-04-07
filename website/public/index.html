@@ -9,7 +9,8 @@
     </head>
 
     <body>
-        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script language="javascript" type="text/javascript" src="deflyers_abi" >
         <script>
             window.addEventListener('load', function() {
             // Check if MetaMask is installed
@@ -21,8 +22,9 @@
                         console.log("Please install MetaMask");
                         }
             })
-
-        </script>
+            var contractAddress = 0x4EAc5441895bFcD5Eb0c368c900Ca9976fD32ee8;
+            console.log(typeof contractAddress);
+                    </script>
     </body>
 
 </html>
