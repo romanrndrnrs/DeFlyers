@@ -11,7 +11,7 @@ contract FlyerFactory is Ownable{
 
     Flyer[] public flyers;
 
-    event NewFlyer(uint id, string name);
+    event NewFlyer(uint id, string name, string description, string image, uint price);
 
     mapping (uint => address) public flyerToOwner;
     mapping (address => uint) public ownerFlyerCount;
@@ -21,6 +21,6 @@ contract FlyerFactory is Ownable{
         uint id = flyers.length - 1;
         flyerToOwner[id] = msg.sender;
         ownerFlyerCount[msg.sender] += 1;
-        emit NewFlyer(id,_name);
+        emit NewFlyer(id,_name,_description,_image,_price);
     }
 }
