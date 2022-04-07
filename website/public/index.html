@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <title>DeFlyers</title>
+
+    </head>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script>
+            window.addEventListener('load', function() {
+            // Check if MetaMask is installed
+            if (typeof window.ethereum !== 'undefined') {
+                web3js = new Web3(window.ethereum);
+                console.log('MetaMask is installed!');
+            }
+            else {
+                        console.log("Please install MetaMask");
+                        }
+            })
+
+        </script>
+    </body>
+
+</html>
+
