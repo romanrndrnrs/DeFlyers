@@ -18,6 +18,7 @@ contract("DeFlyers", (accounts) => {
     it("should be able to transfer a Flyer", async () => {
         const result = await contractInstance.createFlyer(flyerNames[0],flyerDesc[0],flyerImg[0],flyerPrice[0] , {from:alice});
         flyerId = result.logs[0].args.id;
+        await contractInstance.changeSaleStatus(flyerId, {from: alice});
         await contractInstance.transferFrom(alice,bob,flyerId, {from: alice});
         newOwner = await contractInstance.ownerOf(flyerId,{from: alice});
         assert.equal(bob,newOwner);
