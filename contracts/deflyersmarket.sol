@@ -10,7 +10,7 @@ interface IAureusToken {
     function balanceOf(address account) external view returns (uint256);
 }
 
-contract DeflyersMarket is Ownable {
+contract DeFlyersMarket is Ownable {
     IAureusToken aureusAddress;
     IFlyerOwnership deflyTokenAddress;
 

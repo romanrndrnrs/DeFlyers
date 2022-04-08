@@ -14,6 +14,7 @@ contract AureusFactory is AureusToken{
     function faucet() external isFaucetReady(){
         faucetReady[msg.sender] = block.timestamp + 1 days;
         super._mint(msg.sender,5000);
+        emit Transfer(address(this),msg.sender,5000);
     }
 }
 
