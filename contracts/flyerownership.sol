@@ -18,7 +18,16 @@ contract FlyerOwnership is FlyerFactory, ERC721 {
     function ownerOf(uint256 _tokenId) public view virtual override returns (address){
         return flyerToOwner[_tokenId];
     }
-    function transferFrom(address _from, address _to, uint256 _tokenId) public override onlyOwnerOf(_tokenId){
+
+    function _transfer(address _)
+
+    function approve(address to, uint256 tokenId) public virtual override onlyOwnerOf(tokenId){
+        flyerApproval[tokenId] = to;
+    }
+
+    function transferFrom(address _from, address _to, uint256 _tokenId) public override{
+        require(_to != address(0));
+        require(msg.sender == flyerToOwner[_tokenId] || msg.sender == flyerApproval[_tokenId]);
         ownerFlyerCount[_from]--;
         ownerFlyerCount[_to]++;
         flyerToOwner[_tokenId] = _to;
