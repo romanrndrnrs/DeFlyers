@@ -28,4 +28,7 @@ contract AureusToken is ERC20, Ownable {
     function manageMarket(address _marketAddress, bool state) external onlyOwner(){
         approvedMarket[_marketAddress] = state;
     }
+
+
+
 }

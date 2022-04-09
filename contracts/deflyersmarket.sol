@@ -14,7 +14,7 @@ contract DeFlyersMarket is Ownable {
     IAureusToken aureusAddress;
     IFlyerOwnership deflyTokenAddress;
 
-    function setCurrencyAddres(address _aureusAddress) public onlyOwner() {
+    function setCurrencyAddress(address _aureusAddress) public onlyOwner() {
         aureusAddress = IAureusToken(_aureusAddress) ;
     }
 

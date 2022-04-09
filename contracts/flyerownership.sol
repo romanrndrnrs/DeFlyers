@@ -15,7 +15,7 @@ contract FlyerOwnership is FlyerFactory, ERC721 {
 
 
     modifier canBuy(uint _id) {
-        require(flyers[_id].status);
+        require(flyers[_id].status == true);
         _;
     }
 
@@ -41,10 +41,19 @@ contract FlyerOwnership is FlyerFactory, ERC721 {
     function getPrice(uint256 _tokenId) external view returns (uint){
         return flyers[_tokenId].price;
     }
+    
+    function getStatus(uint256 _tokenId) external view returns (bool){
+        return flyers[_tokenId].status;
+    }
 
 
-    function approve(address to, uint256 tokenId) public virtual override onlyOwnerOf(tokenId){
+    function approve(address to, uint256 tokenId) public virtual override {
+        require(flyerApproval[tokenId] == msg.sender || msg.sender == ownerOf(tokenId));
         flyerApproval[tokenId] = to;
+    }
+
+    function setPrice(uint _tokenId, uint _price) external onlyOwnerOf(_tokenId){
+        flyers[_tokenId].price = _price;
     }
 
 

@@ -13,16 +13,16 @@ contract FlyerFactory is Ownable{
 
     Flyer[] public flyers;
 
-    event NewFlyer(uint id, string name, string description, string image, uint price, bool status);
+    event NewFlyer(uint id, string name, string description, string image, uint price);
 
     mapping (uint => address) public flyerToOwner;
     mapping (address => uint) public ownerFlyerCount;
 
-    function createFlyer(string memory _name, string memory _description, string memory _image, uint _price, bool _status) public{
-        flyers.push(Flyer(_name,_description,_image,_price,_status));
+    function createFlyer(string memory _name, string memory _description, string memory _image, uint _price) public{
+        flyers.push(Flyer(_name,_description,_image,_price,false));
         uint id = flyers.length - 1;
         flyerToOwner[id] = msg.sender;
         ownerFlyerCount[msg.sender] += 1;
-        emit NewFlyer(id,_name,_description,_image,_price,_status);
+        emit NewFlyer(id,_name,_description,_image,_price);
     }
 }
