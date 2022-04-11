@@ -17,8 +17,20 @@
                     <button v-on:click="connectMetamask">Connect to your Metamask account</button>
                     <button v-on:click="checkBalance">Check your AURS Balance</button>
                     <button v-on:click="faucet">Load 5000 AURS on your balance</button>
-                    <p class = "jumbotron">okokkkk</p>
+                    <button v-on:click="ownerInitPermissions">Initialise the Market (Only owner !)</button>
 
+                </div>
+                <h3>Tokenize your Aircraft:<h3>
+                <div class="row">
+                    <p class="jumbotron">Aircraft name: <input type="text" v-model="name_input"/></p>
+                    <p class="jumbotron">Aircraft description: <input type="text" v-model="description_input"/></p>
+                    <p class="jumbotron">Aircraft image: <input type="text" v-model="image_input"/></p>
+                    <p class="jumbotron">Aircraft price (in AURS smallest unit): <input type="number" v-model="price_input"/></p>
+                    <button v-on:click="createFlyer">Create the Flyer token of your Aircraft</button>
+                </div>
+                <div class="row">
+                    <p class="jumbotron">Get price of aircraft ID<input type="number" v-model="price_id"/></p>
+                    <button v-on:click="getPrice">Log the price in console</button>
                 </div>
 
 
@@ -34,86 +46,93 @@
         <script language="javascript" type="text/javascript" src="./aureusfactory_abi.js" ></script>
         <script language="javascript" type="text/javascript" src="./aureusfactory_address.js" ></script>
         <script>
+            var app = new Vue({
+                           el:"#app",
+                           data: {
+                                           account:"",
+                                           accounts:"",
+                                           deFlyers:"",
+                                           deFlyersMarket:"",
+                                           aureusFactory:"",
+                                           name_input:"",
+                                           description_input:"",
+                                           image_input:"",
+                                           price_input:"",
+                                           buy_id:"",
+                                           price_id:"",
+                                      },
+                           methods: {
+                                          faucet: async function() {
+                                                         console.log("appuyé")
+                                                         await (this.aureusFactory.methods.faucet().send({from: this.account}));
+                                                         await this.checkBalance();
+                                                     },
+                                          checkBalance:async function() {
+                                                         console.log("appuyé");
+                                                         await (this.aureusFactory.methods.balanceOf(this.account).call()).then((result) => console.log(result));
+                                                     },
+                                          checkMetamask: function() {
+                                                                 // Check if MetaMask is installed
+                                                                 if (typeof window.ethereum !== 'undefined') {
+                                                                     web3js = new Web3(window.ethereum);
+                                                                                if(ethereum.isMetaMask){
+                                                                                             console.log('MetaMask is installed!');
+ 
+                                                                                           }
+                                                                                else{
+                                                                                               console.log("We recommand installing MetaMask");
+                                                                                           }
+                                                                 }
+                                                                 else {
+                                                                     console.log("Please install MetaMask");
+                                                                 }
+                                                                 this.startApp();
+                                                     },
+                                          connectMetamask: async function(){
+                                                         this.accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+                                                         this.account = app.accounts[0];   
+                                                         console.log(app.account);
+                                                     },
+                                          startApp: function(){
+                                                         console.log(aureusfactoryAddresses);
+                                                         this.deFlyers = new web3js.eth.Contract(deflyersABI,deflyersAddresses[0]);
+                                                         this.deFlyersMarket = new web3js.eth.Contract(deflyersmarketABI,deflyersmarketAddresses[0]);
+                                                         this.aureusFactory = new web3js.eth.Contract(aureusfactoryABI,aureusfactoryAddresses[0]);
+                                                     },
+                                           
+                                           // only owner will be able to use this function
+                                           ownerInitPermissions: async function(){
+                                                           // Addresses initialisation for the marketplace
+                                                           await this.deFlyersMarket.methods.setCurrencyAddress(aureusfactoryAddresses[0]).send({from: this.account});
+                                                           await this.deFlyersMarket.methods.setTokenAddress(deflyersAddresses[0]).send({from: this.account});
+                                                           // Approve marketplace for token and currency
+                                                           await this.deFlyers.methods.manageMarket(deflyersmarketAddresses[0],true).send({from: this.account});
+                                                           await this.aureusFactory.methods.manageMarket(deflyersmarketAddresses[0],true).send({from: this.account});
+                                                       },
+                                           createFlyer: async function(){
+                                                           logs = await this.deFlyers.methods.createFlyer(this.name_input,this.description_input,this.image_input,this.price_input).send({from: this.account});
+                                                           console.log(logs);
+                                                           
+                                                       },
+                                           buy: async function(){
 
 
-            function getFlyersDetails(id) {
-                            return deFlyers.methods.flyers(id).call();
-                        }
-//            var userAccount = web3.eth.accounts[0];
-
-            //// Update metamask account
-            //var accountInterval = setInterval(function() {
-            //  // Check if account has changed
-            //  if (web3.eth.accounts[0] !== userAccount) {
-            //    userAccount = web3.eth.accounts[0];
-            //    // Call some function to update the UI with the new account
-            //    //updateInterface();
-            //  }
-            //}, 100);
-
-
-            
-       </script>
-
-       <script>
-           var app = new Vue({
-                          el:"#app",
-                          data: {
-                                         account:"",
-                                         accounts:"",
-                                         deFlyers:"",
-                                         deFlyersMarket:"",
-                                         aureusFactory:"",
-                                     },
-                          methods: {
-                                         faucet: async function() {
-                                                        console.log("appuyé")
-                                                        await (this.aureusFactory.methods.faucet().send({from: this.account}));
-                                                        await this.checkBalance();
-                                                    },
-                                         checkBalance:async function() {
-                                                        console.log("appuyé");
-                                                        await (this.aureusFactory.methods.balanceOf(this.account).call()).then((result) => console.log(result));
-                                                    },
-                                         checkMetamask: function() {
-                                                                // Check if MetaMask is installed
-                                                                if (typeof window.ethereum !== 'undefined') {
-                                                                    web3js = new Web3(window.ethereum);
-                                                                               if(ethereum.isMetaMask){
-                                                                                            console.log('MetaMask is installed!');
-
-                                                                                          }
-                                                                               else{
-                                                                                              console.log("We recommand installing MetaMask");
-                                                                                          }
-                                                                }
-                                                                else {
-                                                                    console.log("Please install MetaMask");
-                                                                }
-                                                                this.startApp();
-                                                    },
-                                         connectMetamask: async function(){
-                                                        this.accounts = await ethereum.request({ method: 'eth_requestAccounts' });
-                                                        this.account = app.accounts[0];   
-                                                        console.log(app.account);
-                                                    },
-                                         startApp: function(){
-                                                        console.log(aureusfactoryAddresses);
-                                                        this.deFlyers = new web3js.eth.Contract(deflyersABI,deflyersAddresses[0]);
-                                                        this.deFlyersMarket = new web3js.eth.Contract(deflyersmarketABI,deflyersmarketAddresses[0]);
-                                                        this.aureusFactory = new web3js.eth.Contract(aureusfactoryABI,aureusfactoryAddresses[0]);
-                                                    }
-
-                                                    
-
-                                     },
-                          beforeMount() {
-                                         this.checkMetamask();
-
-                                     },
-                      })
-
-       </script>
+                                                       },
+                                           getPrice: async function(){
+                                                           res = await this.deFlyers.methods.getPrice(this.price_id).call();
+                                                           console.log(res);
+                                                       },
+ 
+                                                     
+ 
+                                      },
+                           beforeMount() {
+                                          this.checkMetamask();
+ 
+                                      },
+                       })
+ 
+        </script>
     </body>
 
 </html>
