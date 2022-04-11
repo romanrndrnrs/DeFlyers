@@ -1,0 +1,2 @@
+// index 0 is ganache
+var deflyersmarketAddresses = ["0x25EbaD70861BFB00d2f6972c3Bf2dE3cbE171bc6"];

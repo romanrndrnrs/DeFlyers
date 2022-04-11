@@ -1,0 +1,1 @@
+var aureusfactoryAddresses = ["0xd2a8fDE90f6DA4e1e45A5544D3E2cC69592F5C7a"]

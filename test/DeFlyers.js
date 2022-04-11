@@ -24,3 +24,4 @@ contract("DeFlyers", (accounts) => {
         assert.equal(bob,newOwner);
     })
 })
+

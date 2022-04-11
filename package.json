@@ -22,7 +22,12 @@
   "homepage": "https://github.com/romanrndrnrs/DeFlyers#readme",
   "dependencies": {
     "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
     "@truffle/hdwallet-provider": "^2.0.4",
+    "chai-bignumber": "^3.0.0",
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "chai-bn": "^0.3.1"
   }
 }

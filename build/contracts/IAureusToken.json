@@ -44,7 +44,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"marketSend\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/deflyersmarket.sol\":\"IAureusToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x24e0364e503a9bbde94c715d26573a76f14cd2a202d45f96f52134ab806b67b9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e12cbaa7378fd9b62280e4e1d164bedcb4399ce238f5f98fc0eefb7e50577981\",\"dweb:/ipfs/QmXRoFGUgfsaRkoPT5bxNMtSayKTQ8GZATLPXf69HcRA51\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xbbc8ac883ac3c0078ce5ad3e288fbb3ffcc8a30c3a98c0fda0114d64fc44fca2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://87a7a5d2f6f63f84598af02b8c50ca2df2631cb8ba2453e8d95fcb17e4be9824\",\"dweb:/ipfs/QmR76hqtAcRqoFj33tmNjcWTLrgNsAaakYwnKZ8zoJtKei\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x516a22876c1fab47f49b1bc22b4614491cd05338af8bd2e7b382da090a079990\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a439187f7126d31add4557f82d8aed6be0162007cd7182c48fd934dbab8f3849\",\"dweb:/ipfs/QmRPLguRFvrRJS7r6F1bcLvsx6q1VrgjEpZafyeL8D7xZh\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"project:/contracts/IFlyerOwnership.sol\":{\"keccak256\":\"0x6267faf68c3442075d7b6a7ba4bee59c4f1da87fd109ae322987db6febdffa67\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://224c50bfa3cc966697929f4ba962c3abb0a2b807a1edd2196c43e215cf30b3d0\",\"dweb:/ipfs/QmdNjs29dkdGk3WBiWVvjnBXbMG6XJzpuAnFjMdM7oyDy3\"]},\"project:/contracts/deflyersmarket.sol\":{\"keccak256\":\"0xf80437f0f4448e1e0286cb9bedc572438fb4a62b71d79767b4b87bf3bf505878\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4b0d202f0d2f24b7ff24d81a628537a1eb5c1ee9f6c7545cd9ac405492c56203\",\"dweb:/ipfs/QmUc1MfPLea1aCb63PRFYiLMBeqq25kSiYfXW7GuEQrNrK\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"marketSend\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/deflyersmarket.sol\":\"IAureusToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x24e0364e503a9bbde94c715d26573a76f14cd2a202d45f96f52134ab806b67b9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e12cbaa7378fd9b62280e4e1d164bedcb4399ce238f5f98fc0eefb7e50577981\",\"dweb:/ipfs/QmXRoFGUgfsaRkoPT5bxNMtSayKTQ8GZATLPXf69HcRA51\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xbbc8ac883ac3c0078ce5ad3e288fbb3ffcc8a30c3a98c0fda0114d64fc44fca2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://87a7a5d2f6f63f84598af02b8c50ca2df2631cb8ba2453e8d95fcb17e4be9824\",\"dweb:/ipfs/QmR76hqtAcRqoFj33tmNjcWTLrgNsAaakYwnKZ8zoJtKei\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x516a22876c1fab47f49b1bc22b4614491cd05338af8bd2e7b382da090a079990\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a439187f7126d31add4557f82d8aed6be0162007cd7182c48fd934dbab8f3849\",\"dweb:/ipfs/QmRPLguRFvrRJS7r6F1bcLvsx6q1VrgjEpZafyeL8D7xZh\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"project:/contracts/IFlyerOwnership.sol\":{\"keccak256\":\"0x6267faf68c3442075d7b6a7ba4bee59c4f1da87fd109ae322987db6febdffa67\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://224c50bfa3cc966697929f4ba962c3abb0a2b807a1edd2196c43e215cf30b3d0\",\"dweb:/ipfs/QmdNjs29dkdGk3WBiWVvjnBXbMG6XJzpuAnFjMdM7oyDy3\"]},\"project:/contracts/deflyersmarket.sol\":{\"keccak256\":\"0x5ddd9fdc3ceb86bb9a13b75a86cb306d1a0fa1bf247bc67d270d648d7a4602b3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://52f8e9c805963344fddaec511411f98e0060f0a73da967875ffa1f85a9ef1853\",\"dweb:/ipfs/QmXHfU1HB2MDY4ckrVNMy8L1GAKAZk34YwBJ6xDzTbTytk\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -52,7 +52,7 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8;\nimport \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\nimport \"@openzeppelin/contracts/token/ERC721/IERC721.sol\";\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\nimport \"./IFlyerOwnership.sol\";\n\ninterface IAureusToken {\n    function marketSend(address _from,address _to,uint256 _amount) external;\n    function balanceOf(address account) external view returns (uint256);\n}\n\ncontract DeflyersMarket is Ownable {\n    IAureusToken aureusAddress;\n    IFlyerOwnership deflyTokenAddress;\n\n    function setCurrencyAddres(address _aureusAddress) public onlyOwner() {\n        aureusAddress = IAureusToken(_aureusAddress) ;\n    }\n\n    function setTokenAddress(address _deflyTokenAddress) public onlyOwner(){\n       deflyTokenAddress = IFlyerOwnership(_deflyTokenAddress);\n    }\n\n    // First transaction amount must be loaded and token on sale then execute this exchange\n    function exchange(uint _tokenId,uint _amount) external{\n        require(deflyTokenAddress.getPrice(_tokenId) == _amount && aureusAddress.balanceOf(msg.sender) >= _amount);\n        // Send currency\n        aureusAddress.marketSend(msg.sender,deflyTokenAddress.ownerOf(_tokenId),_amount);\n        // Send token\n        deflyTokenAddress.marketSend(deflyTokenAddress.ownerOf(_tokenId),msg.sender,_tokenId);\n        // Sale status on false to avoid any other instant trade\n        deflyTokenAddress.closeSale(_tokenId);\n    }\n\n\n\n}\n",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8;\nimport \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\nimport \"@openzeppelin/contracts/token/ERC721/IERC721.sol\";\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\nimport \"./IFlyerOwnership.sol\";\n\ninterface IAureusToken {\n    function marketSend(address _from,address _to,uint256 _amount) external;\n    function balanceOf(address account) external view returns (uint256);\n}\n\ncontract DeFlyersMarket is Ownable {\n    IAureusToken aureusAddress;\n    IFlyerOwnership deflyTokenAddress;\n\n    function setCurrencyAddress(address _aureusAddress) public onlyOwner() {\n        aureusAddress = IAureusToken(_aureusAddress) ;\n    }\n\n    function setTokenAddress(address _deflyTokenAddress) public onlyOwner(){\n       deflyTokenAddress = IFlyerOwnership(_deflyTokenAddress);\n    }\n\n    // First transaction amount must be loaded and token on sale then execute this exchange\n    function exchange(uint _tokenId,uint _amount) external{\n        require(deflyTokenAddress.getPrice(_tokenId) == _amount && aureusAddress.balanceOf(msg.sender) >= _amount);\n        // Send currency\n        aureusAddress.marketSend(msg.sender,deflyTokenAddress.ownerOf(_tokenId),_amount);\n        // Send token\n        deflyTokenAddress.marketSend(deflyTokenAddress.ownerOf(_tokenId),msg.sender,_tokenId);\n        // Sale status on false to avoid any other instant trade\n        deflyTokenAddress.closeSale(_tokenId);\n    }\n\n\n\n}\n",
   "sourcePath": "/home/roman/Projets/WEB3/DeFlyers/contracts/deflyersmarket.sol",
   "ast": {
     "absolutePath": "project:/contracts/deflyersmarket.sol",
@@ -60,11 +60,11 @@
       "Context": [
         2139
       ],
-      "DeflyersMarket": [
-        2716
+      "DeFlyersMarket": [
+        2726
       ],
       "IAureusToken": [
-        2624
+        2634
       ],
       "IERC165": [
         2378
@@ -82,12 +82,12 @@
         104
       ]
     },
-    "id": 2717,
+    "id": 2727,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2603,
+        "id": 2613,
         "literals": [
           "solidity",
           "^",
@@ -99,10 +99,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
         "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
-        "id": 2604,
+        "id": 2614,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2717,
+        "scope": 2727,
         "sourceUnit": 771,
         "src": "54:56:18",
         "symbolAliases": [],
@@ -111,10 +111,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
         "file": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
-        "id": 2605,
+        "id": 2615,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2717,
+        "scope": 2727,
         "sourceUnit": 1778,
         "src": "111:58:18",
         "symbolAliases": [],
@@ -123,10 +123,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
         "file": "@openzeppelin/contracts/access/Ownable.sol",
-        "id": 2606,
+        "id": 2616,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2717,
+        "scope": 2727,
         "sourceUnit": 105,
         "src": "170:52:18",
         "symbolAliases": [],
@@ -135,10 +135,10 @@
       {
         "absolutePath": "project:/contracts/IFlyerOwnership.sol",
         "file": "./IFlyerOwnership.sol",
-        "id": 2607,
+        "id": 2617,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2717,
+        "scope": 2727,
         "sourceUnit": 2430,
         "src": "223:31:18",
         "symbolAliases": [],
@@ -151,9 +151,9 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 2624,
+        "id": 2634,
         "linearizedBaseContracts": [
-          2624
+          2634
         ],
         "name": "IAureusToken",
         "nameLocation": "266:12:18",
@@ -161,7 +161,7 @@
         "nodes": [
           {
             "functionSelector": "fff5ae4e",
-            "id": 2616,
+            "id": 2626,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -169,17 +169,17 @@
             "nameLocation": "294:10:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2614,
+              "id": 2624,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2609,
+                  "id": 2619,
                   "mutability": "mutable",
                   "name": "_from",
                   "nameLocation": "313:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2616,
+                  "scope": 2626,
                   "src": "305:13:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -188,7 +188,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2608,
+                    "id": 2618,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "305:7:18",
@@ -202,12 +202,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 2611,
+                  "id": 2621,
                   "mutability": "mutable",
                   "name": "_to",
                   "nameLocation": "327:3:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2616,
+                  "scope": 2626,
                   "src": "319:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -216,7 +216,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2610,
+                    "id": 2620,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "319:7:18",
@@ -230,12 +230,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 2613,
+                  "id": 2623,
                   "mutability": "mutable",
                   "name": "_amount",
                   "nameLocation": "339:7:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2616,
+                  "scope": 2626,
                   "src": "331:15:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -244,7 +244,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2612,
+                    "id": 2622,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "331:7:18",
@@ -259,12 +259,12 @@
               "src": "304:43:18"
             },
             "returnParameters": {
-              "id": 2615,
+              "id": 2625,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "356:0:18"
             },
-            "scope": 2624,
+            "scope": 2634,
             "src": "285:72:18",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -272,7 +272,7 @@
           },
           {
             "functionSelector": "70a08231",
-            "id": 2623,
+            "id": 2633,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -280,17 +280,17 @@
             "nameLocation": "371:9:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2619,
+              "id": 2629,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2618,
+                  "id": 2628,
                   "mutability": "mutable",
                   "name": "account",
                   "nameLocation": "389:7:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2623,
+                  "scope": 2633,
                   "src": "381:15:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -299,7 +299,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2617,
+                    "id": 2627,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "381:7:18",
@@ -315,17 +315,17 @@
               "src": "380:17:18"
             },
             "returnParameters": {
-              "id": 2622,
+              "id": 2632,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2621,
+                  "id": 2631,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2623,
+                  "scope": 2633,
                   "src": "421:7:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -334,7 +334,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2620,
+                    "id": 2630,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "421:7:18",
@@ -348,14 +348,14 @@
               ],
               "src": "420:9:18"
             },
-            "scope": 2624,
+            "scope": 2634,
             "src": "362:68:18",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2717,
+        "scope": 2727,
         "src": "256:176:18",
         "usedErrors": []
       },
@@ -364,60 +364,60 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 2625,
+              "id": 2635,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 104,
               "src": "461:7:18"
             },
-            "id": 2626,
+            "id": 2636,
             "nodeType": "InheritanceSpecifier",
             "src": "461:7:18"
           }
         ],
-        "canonicalName": "DeflyersMarket",
+        "canonicalName": "DeFlyersMarket",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 2716,
+        "id": 2726,
         "linearizedBaseContracts": [
-          2716,
+          2726,
           104,
           2139
         ],
-        "name": "DeflyersMarket",
+        "name": "DeFlyersMarket",
         "nameLocation": "443:14:18",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 2629,
+            "id": 2639,
             "mutability": "mutable",
             "name": "aureusAddress",
             "nameLocation": "488:13:18",
             "nodeType": "VariableDeclaration",
-            "scope": 2716,
+            "scope": 2726,
             "src": "475:26:18",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IAureusToken_$2624",
+              "typeIdentifier": "t_contract$_IAureusToken_$2634",
               "typeString": "contract IAureusToken"
             },
             "typeName": {
-              "id": 2628,
+              "id": 2638,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 2627,
+                "id": 2637,
                 "name": "IAureusToken",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 2624,
+                "referencedDeclaration": 2634,
                 "src": "475:12:18"
               },
-              "referencedDeclaration": 2624,
+              "referencedDeclaration": 2634,
               "src": "475:12:18",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IAureusToken_$2624",
+                "typeIdentifier": "t_contract$_IAureusToken_$2634",
                 "typeString": "contract IAureusToken"
               }
             },
@@ -425,12 +425,12 @@
           },
           {
             "constant": false,
-            "id": 2632,
+            "id": 2642,
             "mutability": "mutable",
             "name": "deflyTokenAddress",
             "nameLocation": "523:17:18",
             "nodeType": "VariableDeclaration",
-            "scope": 2716,
+            "scope": 2726,
             "src": "507:33:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -439,10 +439,10 @@
               "typeString": "contract IFlyerOwnership"
             },
             "typeName": {
-              "id": 2631,
+              "id": 2641,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 2630,
+                "id": 2640,
                 "name": "IFlyerOwnership",
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 2429,
@@ -459,26 +459,26 @@
           },
           {
             "body": {
-              "id": 2645,
+              "id": 2655,
               "nodeType": "Block",
-              "src": "617:62:18",
+              "src": "618:62:18",
               "statements": [
                 {
                   "expression": {
-                    "id": 2643,
+                    "id": 2653,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 2639,
+                      "id": 2649,
                       "name": "aureusAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2629,
-                      "src": "627:13:18",
+                      "referencedDeclaration": 2639,
+                      "src": "628:13:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IAureusToken_$2624",
+                        "typeIdentifier": "t_contract$_IAureusToken_$2634",
                         "typeString": "contract IAureusToken"
                       }
                     },
@@ -487,12 +487,12 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 2641,
+                          "id": 2651,
                           "name": "_aureusAddress",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2634,
-                          "src": "656:14:18",
+                          "referencedDeclaration": 2644,
+                          "src": "657:14:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -506,18 +506,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 2640,
+                        "id": 2650,
                         "name": "IAureusToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2624,
-                        "src": "643:12:18",
+                        "referencedDeclaration": 2634,
+                        "src": "644:12:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_IAureusToken_$2624_$",
+                          "typeIdentifier": "t_type$_t_contract$_IAureusToken_$2634_$",
                           "typeString": "type(contract IAureusToken)"
                         }
                       },
-                      "id": 2642,
+                      "id": 2652,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -525,61 +525,61 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "643:28:18",
+                      "src": "644:28:18",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IAureusToken_$2624",
+                        "typeIdentifier": "t_contract$_IAureusToken_$2634",
                         "typeString": "contract IAureusToken"
                       }
                     },
-                    "src": "627:44:18",
+                    "src": "628:44:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IAureusToken_$2624",
+                      "typeIdentifier": "t_contract$_IAureusToken_$2634",
                       "typeString": "contract IAureusToken"
                     }
                   },
-                  "id": 2644,
+                  "id": 2654,
                   "nodeType": "ExpressionStatement",
-                  "src": "627:44:18"
+                  "src": "628:44:18"
                 }
               ]
             },
-            "functionSelector": "04cbdfb9",
-            "id": 2646,
+            "functionSelector": "796b89ec",
+            "id": 2656,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": [],
-                "id": 2637,
+                "id": 2647,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 2636,
+                  "id": 2646,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
-                  "src": "605:9:18"
+                  "src": "606:9:18"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "605:11:18"
+                "src": "606:11:18"
               }
             ],
-            "name": "setCurrencyAddres",
-            "nameLocation": "556:17:18",
+            "name": "setCurrencyAddress",
+            "nameLocation": "556:18:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2635,
+              "id": 2645,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2634,
+                  "id": 2644,
                   "mutability": "mutable",
                   "name": "_aureusAddress",
-                  "nameLocation": "582:14:18",
+                  "nameLocation": "583:14:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2646,
-                  "src": "574:22:18",
+                  "scope": 2656,
+                  "src": "575:22:18",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -587,10 +587,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2633,
+                    "id": 2643,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "574:7:18",
+                    "src": "575:7:18",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -600,40 +600,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "573:24:18"
+              "src": "574:24:18"
             },
             "returnParameters": {
-              "id": 2638,
+              "id": 2648,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "617:0:18"
+              "src": "618:0:18"
             },
-            "scope": 2716,
-            "src": "547:132:18",
+            "scope": 2726,
+            "src": "547:133:18",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 2659,
+              "id": 2669,
               "nodeType": "Block",
-              "src": "756:71:18",
+              "src": "757:71:18",
               "statements": [
                 {
                   "expression": {
-                    "id": 2657,
+                    "id": 2667,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 2653,
+                      "id": 2663,
                       "name": "deflyTokenAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2632,
-                      "src": "765:17:18",
+                      "referencedDeclaration": 2642,
+                      "src": "766:17:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                         "typeString": "contract IFlyerOwnership"
@@ -644,12 +644,12 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 2655,
+                          "id": 2665,
                           "name": "_deflyTokenAddress",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2648,
-                          "src": "801:18:18",
+                          "referencedDeclaration": 2658,
+                          "src": "802:18:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -663,18 +663,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 2654,
+                        "id": 2664,
                         "name": "IFlyerOwnership",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 2429,
-                        "src": "785:15:18",
+                        "src": "786:15:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_contract$_IFlyerOwnership_$2429_$",
                           "typeString": "type(contract IFlyerOwnership)"
                         }
                       },
-                      "id": 2656,
+                      "id": 2666,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -682,61 +682,61 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "785:35:18",
+                      "src": "786:35:18",
                       "tryCall": false,
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                         "typeString": "contract IFlyerOwnership"
                       }
                     },
-                    "src": "765:55:18",
+                    "src": "766:55:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                       "typeString": "contract IFlyerOwnership"
                     }
                   },
-                  "id": 2658,
+                  "id": 2668,
                   "nodeType": "ExpressionStatement",
-                  "src": "765:55:18"
+                  "src": "766:55:18"
                 }
               ]
             },
             "functionSelector": "26a4e8d2",
-            "id": 2660,
+            "id": 2670,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": [],
-                "id": 2651,
+                "id": 2661,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 2650,
+                  "id": 2660,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
-                  "src": "745:9:18"
+                  "src": "746:9:18"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "745:11:18"
+                "src": "746:11:18"
               }
             ],
             "name": "setTokenAddress",
-            "nameLocation": "694:15:18",
+            "nameLocation": "695:15:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2649,
+              "id": 2659,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2648,
+                  "id": 2658,
                   "mutability": "mutable",
                   "name": "_deflyTokenAddress",
-                  "nameLocation": "718:18:18",
+                  "nameLocation": "719:18:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2660,
-                  "src": "710:26:18",
+                  "scope": 2670,
+                  "src": "711:26:18",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -744,10 +744,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2647,
+                    "id": 2657,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "710:7:18",
+                    "src": "711:7:18",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -757,25 +757,25 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "709:28:18"
+              "src": "710:28:18"
             },
             "returnParameters": {
-              "id": 2652,
+              "id": 2662,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "756:0:18"
+              "src": "757:0:18"
             },
-            "scope": 2716,
-            "src": "685:142:18",
+            "scope": 2726,
+            "src": "686:142:18",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 2714,
+              "id": 2724,
               "nodeType": "Block",
-              "src": "979:467:18",
+              "src": "980:467:18",
               "statements": [
                 {
                   "expression": {
@@ -785,7 +785,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 2681,
+                        "id": 2691,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -795,7 +795,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 2673,
+                          "id": 2683,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -803,12 +803,12 @@
                           "leftExpression": {
                             "arguments": [
                               {
-                                "id": 2670,
+                                "id": 2680,
                                 "name": "_tokenId",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2662,
-                                "src": "1024:8:18",
+                                "referencedDeclaration": 2672,
+                                "src": "1025:8:18",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -823,18 +823,18 @@
                                 }
                               ],
                               "expression": {
-                                "id": 2668,
+                                "id": 2678,
                                 "name": "deflyTokenAddress",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2632,
-                                "src": "997:17:18",
+                                "referencedDeclaration": 2642,
+                                "src": "998:17:18",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                                   "typeString": "contract IFlyerOwnership"
                                 }
                               },
-                              "id": 2669,
+                              "id": 2679,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -842,13 +842,13 @@
                               "memberName": "getPrice",
                               "nodeType": "MemberAccess",
                               "referencedDeclaration": 2400,
-                              "src": "997:26:18",
+                              "src": "998:26:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_uint256_$",
                                 "typeString": "function (uint256) view external returns (uint256)"
                               }
                             },
-                            "id": 2671,
+                            "id": 2681,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -856,7 +856,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "997:36:18",
+                            "src": "998:36:18",
                             "tryCall": false,
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -866,18 +866,18 @@
                           "nodeType": "BinaryOperation",
                           "operator": "==",
                           "rightExpression": {
-                            "id": 2672,
+                            "id": 2682,
                             "name": "_amount",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2664,
-                            "src": "1037:7:18",
+                            "referencedDeclaration": 2674,
+                            "src": "1038:7:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "997:47:18",
+                          "src": "998:47:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -890,7 +890,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 2680,
+                          "id": 2690,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -899,25 +899,25 @@
                             "arguments": [
                               {
                                 "expression": {
-                                  "id": 2676,
+                                  "id": 2686,
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
                                   "referencedDeclaration": 4294967281,
-                                  "src": "1072:3:18",
+                                  "src": "1073:3:18",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_message",
                                     "typeString": "msg"
                                   }
                                 },
-                                "id": 2677,
+                                "id": 2687,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "sender",
                                 "nodeType": "MemberAccess",
-                                "src": "1072:10:18",
+                                "src": "1073:10:18",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_address",
                                   "typeString": "address"
@@ -932,32 +932,32 @@
                                 }
                               ],
                               "expression": {
-                                "id": 2674,
+                                "id": 2684,
                                 "name": "aureusAddress",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2629,
-                                "src": "1048:13:18",
+                                "referencedDeclaration": 2639,
+                                "src": "1049:13:18",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_IAureusToken_$2624",
+                                  "typeIdentifier": "t_contract$_IAureusToken_$2634",
                                   "typeString": "contract IAureusToken"
                                 }
                               },
-                              "id": 2675,
+                              "id": 2685,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "balanceOf",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2623,
-                              "src": "1048:23:18",
+                              "referencedDeclaration": 2633,
+                              "src": "1049:23:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                                 "typeString": "function (address) view external returns (uint256)"
                               }
                             },
-                            "id": 2678,
+                            "id": 2688,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -965,7 +965,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "1048:35:18",
+                            "src": "1049:35:18",
                             "tryCall": false,
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -975,24 +975,24 @@
                           "nodeType": "BinaryOperation",
                           "operator": ">=",
                           "rightExpression": {
-                            "id": 2679,
+                            "id": 2689,
                             "name": "_amount",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2664,
-                            "src": "1087:7:18",
+                            "referencedDeclaration": 2674,
+                            "src": "1088:7:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "1048:46:18",
+                          "src": "1049:46:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "src": "997:97:18",
+                        "src": "998:97:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1006,7 +1006,7 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 2667,
+                      "id": 2677,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1014,13 +1014,13 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "989:7:18",
+                      "src": "990:7:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 2682,
+                    "id": 2692,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1028,185 +1028,46 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "989:106:18",
+                    "src": "990:106:18",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2683,
+                  "id": 2693,
                   "nodeType": "ExpressionStatement",
-                  "src": "989:106:18"
+                  "src": "990:106:18"
                 },
                 {
                   "expression": {
                     "arguments": [
                       {
                         "expression": {
-                          "id": 2687,
+                          "id": 2697,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 4294967281,
-                          "src": "1155:3:18",
+                          "src": "1156:3:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 2688,
+                        "id": 2698,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
-                        "src": "1155:10:18",
+                        "src": "1156:10:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         }
                       },
-                      {
-                        "arguments": [
-                          {
-                            "id": 2691,
-                            "name": "_tokenId",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 2662,
-                            "src": "1192:8:18",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_uint256",
-                              "typeString": "uint256"
-                            }
-                          }
-                        ],
-                        "expression": {
-                          "argumentTypes": [
-                            {
-                              "typeIdentifier": "t_uint256",
-                              "typeString": "uint256"
-                            }
-                          ],
-                          "expression": {
-                            "id": 2689,
-                            "name": "deflyTokenAddress",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 2632,
-                            "src": "1166:17:18",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
-                              "typeString": "contract IFlyerOwnership"
-                            }
-                          },
-                          "id": 2690,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "ownerOf",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2393,
-                          "src": "1166:25:18",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_address_$",
-                            "typeString": "function (uint256) view external returns (address)"
-                          }
-                        },
-                        "id": 2692,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "kind": "functionCall",
-                        "lValueRequested": false,
-                        "names": [],
-                        "nodeType": "FunctionCall",
-                        "src": "1166:35:18",
-                        "tryCall": false,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      },
-                      {
-                        "id": 2693,
-                        "name": "_amount",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 2664,
-                        "src": "1202:7:18",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        },
-                        {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        },
-                        {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      ],
-                      "expression": {
-                        "id": 2684,
-                        "name": "aureusAddress",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 2629,
-                        "src": "1130:13:18",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IAureusToken_$2624",
-                          "typeString": "contract IAureusToken"
-                        }
-                      },
-                      "id": 2686,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "memberName": "marketSend",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2616,
-                      "src": "1130:24:18",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
-                        "typeString": "function (address,address,uint256) external"
-                      }
-                    },
-                    "id": 2694,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "1130:80:18",
-                    "tryCall": false,
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 2695,
-                  "nodeType": "ExpressionStatement",
-                  "src": "1130:80:18"
-                },
-                {
-                  "expression": {
-                    "arguments": [
                       {
                         "arguments": [
                           {
@@ -1214,8 +1075,8 @@
                             "name": "_tokenId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2662,
-                            "src": "1297:8:18",
+                            "referencedDeclaration": 2672,
+                            "src": "1193:8:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -1234,8 +1095,8 @@
                             "name": "deflyTokenAddress",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2632,
-                            "src": "1271:17:18",
+                            "referencedDeclaration": 2642,
+                            "src": "1167:17:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                               "typeString": "contract IFlyerOwnership"
@@ -1249,7 +1110,7 @@
                           "memberName": "ownerOf",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": 2393,
-                          "src": "1271:25:18",
+                          "src": "1167:25:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_address_$",
                             "typeString": "function (uint256) view external returns (address)"
@@ -1263,7 +1124,146 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1271:35:18",
+                        "src": "1167:35:18",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 2703,
+                        "name": "_amount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2674,
+                        "src": "1203:7:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 2694,
+                        "name": "aureusAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2639,
+                        "src": "1131:13:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IAureusToken_$2634",
+                          "typeString": "contract IAureusToken"
+                        }
+                      },
+                      "id": 2696,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "marketSend",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2626,
+                      "src": "1131:24:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256) external"
+                      }
+                    },
+                    "id": 2704,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1131:80:18",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2705,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1131:80:18"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 2711,
+                            "name": "_tokenId",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2672,
+                            "src": "1298:8:18",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "id": 2709,
+                            "name": "deflyTokenAddress",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2642,
+                            "src": "1272:17:18",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
+                              "typeString": "contract IFlyerOwnership"
+                            }
+                          },
+                          "id": 2710,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "ownerOf",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 2393,
+                          "src": "1272:25:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_address_$",
+                            "typeString": "function (uint256) view external returns (address)"
+                          }
+                        },
+                        "id": 2712,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1272:35:18",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1272,37 +1272,37 @@
                       },
                       {
                         "expression": {
-                          "id": 2703,
+                          "id": 2713,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 4294967281,
-                          "src": "1307:3:18",
+                          "src": "1308:3:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 2704,
+                        "id": 2714,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
-                        "src": "1307:10:18",
+                        "src": "1308:10:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         }
                       },
                       {
-                        "id": 2705,
+                        "id": 2715,
                         "name": "_tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2662,
-                        "src": "1318:8:18",
+                        "referencedDeclaration": 2672,
+                        "src": "1319:8:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1325,18 +1325,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 2696,
+                        "id": 2706,
                         "name": "deflyTokenAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2632,
-                        "src": "1242:17:18",
+                        "referencedDeclaration": 2642,
+                        "src": "1243:17:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                           "typeString": "contract IFlyerOwnership"
                         }
                       },
-                      "id": 2698,
+                      "id": 2708,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1344,13 +1344,13 @@
                       "memberName": "marketSend",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 2409,
-                      "src": "1242:28:18",
+                      "src": "1243:28:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,address,uint256) external"
                       }
                     },
-                    "id": 2706,
+                    "id": 2716,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1358,27 +1358,27 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1242:85:18",
+                    "src": "1243:85:18",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2707,
+                  "id": 2717,
                   "nodeType": "ExpressionStatement",
-                  "src": "1242:85:18"
+                  "src": "1243:85:18"
                 },
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 2711,
+                        "id": 2721,
                         "name": "_tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2662,
-                        "src": "1430:8:18",
+                        "referencedDeclaration": 2672,
+                        "src": "1431:8:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1393,18 +1393,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 2708,
+                        "id": 2718,
                         "name": "deflyTokenAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2632,
-                        "src": "1402:17:18",
+                        "referencedDeclaration": 2642,
+                        "src": "1403:17:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                           "typeString": "contract IFlyerOwnership"
                         }
                       },
-                      "id": 2710,
+                      "id": 2720,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1412,13 +1412,13 @@
                       "memberName": "closeSale",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 2428,
-                      "src": "1402:27:18",
+                      "src": "1403:27:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256) external"
                       }
                     },
-                    "id": 2712,
+                    "id": 2722,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1426,40 +1426,40 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1402:37:18",
+                    "src": "1403:37:18",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2713,
+                  "id": 2723,
                   "nodeType": "ExpressionStatement",
-                  "src": "1402:37:18"
+                  "src": "1403:37:18"
                 }
               ]
             },
             "functionSelector": "d4b7eac3",
-            "id": 2715,
+            "id": 2725,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "exchange",
-            "nameLocation": "934:8:18",
+            "nameLocation": "935:8:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2665,
+              "id": 2675,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2662,
+                  "id": 2672,
                   "mutability": "mutable",
                   "name": "_tokenId",
-                  "nameLocation": "948:8:18",
+                  "nameLocation": "949:8:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2715,
-                  "src": "943:13:18",
+                  "scope": 2725,
+                  "src": "944:13:18",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1467,10 +1467,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2661,
+                    "id": 2671,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "943:4:18",
+                    "src": "944:4:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1480,13 +1480,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2664,
+                  "id": 2674,
                   "mutability": "mutable",
                   "name": "_amount",
-                  "nameLocation": "962:7:18",
+                  "nameLocation": "963:7:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2715,
-                  "src": "957:12:18",
+                  "scope": 2725,
+                  "src": "958:12:18",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1494,10 +1494,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2663,
+                    "id": 2673,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "957:4:18",
+                    "src": "958:4:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1506,27 +1506,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "942:28:18"
+              "src": "943:28:18"
             },
             "returnParameters": {
-              "id": 2666,
+              "id": 2676,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "979:0:18"
+              "src": "980:0:18"
             },
-            "scope": 2716,
-            "src": "925:521:18",
+            "scope": 2726,
+            "src": "926:521:18",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2717,
-        "src": "434:1017:18",
+        "scope": 2727,
+        "src": "434:1018:18",
         "usedErrors": []
       }
     ],
-    "src": "32:1420:18"
+    "src": "32:1421:18"
   },
   "legacyAST": {
     "absolutePath": "project:/contracts/deflyersmarket.sol",
@@ -1534,11 +1534,11 @@
       "Context": [
         2139
       ],
-      "DeflyersMarket": [
-        2716
+      "DeFlyersMarket": [
+        2726
       ],
       "IAureusToken": [
-        2624
+        2634
       ],
       "IERC165": [
         2378
@@ -1556,12 +1556,12 @@
         104
       ]
     },
-    "id": 2717,
+    "id": 2727,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2603,
+        "id": 2613,
         "literals": [
           "solidity",
           "^",
@@ -1573,10 +1573,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
         "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
-        "id": 2604,
+        "id": 2614,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2717,
+        "scope": 2727,
         "sourceUnit": 771,
         "src": "54:56:18",
         "symbolAliases": [],
@@ -1585,10 +1585,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
         "file": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
-        "id": 2605,
+        "id": 2615,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2717,
+        "scope": 2727,
         "sourceUnit": 1778,
         "src": "111:58:18",
         "symbolAliases": [],
@@ -1597,10 +1597,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
         "file": "@openzeppelin/contracts/access/Ownable.sol",
-        "id": 2606,
+        "id": 2616,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2717,
+        "scope": 2727,
         "sourceUnit": 105,
         "src": "170:52:18",
         "symbolAliases": [],
@@ -1609,10 +1609,10 @@
       {
         "absolutePath": "project:/contracts/IFlyerOwnership.sol",
         "file": "./IFlyerOwnership.sol",
-        "id": 2607,
+        "id": 2617,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2717,
+        "scope": 2727,
         "sourceUnit": 2430,
         "src": "223:31:18",
         "symbolAliases": [],
@@ -1625,9 +1625,9 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 2624,
+        "id": 2634,
         "linearizedBaseContracts": [
-          2624
+          2634
         ],
         "name": "IAureusToken",
         "nameLocation": "266:12:18",
@@ -1635,7 +1635,7 @@
         "nodes": [
           {
             "functionSelector": "fff5ae4e",
-            "id": 2616,
+            "id": 2626,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -1643,17 +1643,17 @@
             "nameLocation": "294:10:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2614,
+              "id": 2624,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2609,
+                  "id": 2619,
                   "mutability": "mutable",
                   "name": "_from",
                   "nameLocation": "313:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2616,
+                  "scope": 2626,
                   "src": "305:13:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1662,7 +1662,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2608,
+                    "id": 2618,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "305:7:18",
@@ -1676,12 +1676,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 2611,
+                  "id": 2621,
                   "mutability": "mutable",
                   "name": "_to",
                   "nameLocation": "327:3:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2616,
+                  "scope": 2626,
                   "src": "319:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1690,7 +1690,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2610,
+                    "id": 2620,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "319:7:18",
@@ -1704,12 +1704,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 2613,
+                  "id": 2623,
                   "mutability": "mutable",
                   "name": "_amount",
                   "nameLocation": "339:7:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2616,
+                  "scope": 2626,
                   "src": "331:15:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1718,7 +1718,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2612,
+                    "id": 2622,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "331:7:18",
@@ -1733,12 +1733,12 @@
               "src": "304:43:18"
             },
             "returnParameters": {
-              "id": 2615,
+              "id": 2625,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "356:0:18"
             },
-            "scope": 2624,
+            "scope": 2634,
             "src": "285:72:18",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1746,7 +1746,7 @@
           },
           {
             "functionSelector": "70a08231",
-            "id": 2623,
+            "id": 2633,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -1754,17 +1754,17 @@
             "nameLocation": "371:9:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2619,
+              "id": 2629,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2618,
+                  "id": 2628,
                   "mutability": "mutable",
                   "name": "account",
                   "nameLocation": "389:7:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2623,
+                  "scope": 2633,
                   "src": "381:15:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1773,7 +1773,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2617,
+                    "id": 2627,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "381:7:18",
@@ -1789,17 +1789,17 @@
               "src": "380:17:18"
             },
             "returnParameters": {
-              "id": 2622,
+              "id": 2632,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2621,
+                  "id": 2631,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2623,
+                  "scope": 2633,
                   "src": "421:7:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1808,7 +1808,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2620,
+                    "id": 2630,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "421:7:18",
@@ -1822,14 +1822,14 @@
               ],
               "src": "420:9:18"
             },
-            "scope": 2624,
+            "scope": 2634,
             "src": "362:68:18",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2717,
+        "scope": 2727,
         "src": "256:176:18",
         "usedErrors": []
       },
@@ -1838,60 +1838,60 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 2625,
+              "id": 2635,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 104,
               "src": "461:7:18"
             },
-            "id": 2626,
+            "id": 2636,
             "nodeType": "InheritanceSpecifier",
             "src": "461:7:18"
           }
         ],
-        "canonicalName": "DeflyersMarket",
+        "canonicalName": "DeFlyersMarket",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 2716,
+        "id": 2726,
         "linearizedBaseContracts": [
-          2716,
+          2726,
           104,
           2139
         ],
-        "name": "DeflyersMarket",
+        "name": "DeFlyersMarket",
         "nameLocation": "443:14:18",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 2629,
+            "id": 2639,
             "mutability": "mutable",
             "name": "aureusAddress",
             "nameLocation": "488:13:18",
             "nodeType": "VariableDeclaration",
-            "scope": 2716,
+            "scope": 2726,
             "src": "475:26:18",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IAureusToken_$2624",
+              "typeIdentifier": "t_contract$_IAureusToken_$2634",
               "typeString": "contract IAureusToken"
             },
             "typeName": {
-              "id": 2628,
+              "id": 2638,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 2627,
+                "id": 2637,
                 "name": "IAureusToken",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 2624,
+                "referencedDeclaration": 2634,
                 "src": "475:12:18"
               },
-              "referencedDeclaration": 2624,
+              "referencedDeclaration": 2634,
               "src": "475:12:18",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IAureusToken_$2624",
+                "typeIdentifier": "t_contract$_IAureusToken_$2634",
                 "typeString": "contract IAureusToken"
               }
             },
@@ -1899,12 +1899,12 @@
           },
           {
             "constant": false,
-            "id": 2632,
+            "id": 2642,
             "mutability": "mutable",
             "name": "deflyTokenAddress",
             "nameLocation": "523:17:18",
             "nodeType": "VariableDeclaration",
-            "scope": 2716,
+            "scope": 2726,
             "src": "507:33:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1913,10 +1913,10 @@
               "typeString": "contract IFlyerOwnership"
             },
             "typeName": {
-              "id": 2631,
+              "id": 2641,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 2630,
+                "id": 2640,
                 "name": "IFlyerOwnership",
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 2429,
@@ -1933,26 +1933,26 @@
           },
           {
             "body": {
-              "id": 2645,
+              "id": 2655,
               "nodeType": "Block",
-              "src": "617:62:18",
+              "src": "618:62:18",
               "statements": [
                 {
                   "expression": {
-                    "id": 2643,
+                    "id": 2653,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 2639,
+                      "id": 2649,
                       "name": "aureusAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2629,
-                      "src": "627:13:18",
+                      "referencedDeclaration": 2639,
+                      "src": "628:13:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IAureusToken_$2624",
+                        "typeIdentifier": "t_contract$_IAureusToken_$2634",
                         "typeString": "contract IAureusToken"
                       }
                     },
@@ -1961,12 +1961,12 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 2641,
+                          "id": 2651,
                           "name": "_aureusAddress",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2634,
-                          "src": "656:14:18",
+                          "referencedDeclaration": 2644,
+                          "src": "657:14:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1980,18 +1980,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 2640,
+                        "id": 2650,
                         "name": "IAureusToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2624,
-                        "src": "643:12:18",
+                        "referencedDeclaration": 2634,
+                        "src": "644:12:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_IAureusToken_$2624_$",
+                          "typeIdentifier": "t_type$_t_contract$_IAureusToken_$2634_$",
                           "typeString": "type(contract IAureusToken)"
                         }
                       },
-                      "id": 2642,
+                      "id": 2652,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1999,61 +1999,61 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "643:28:18",
+                      "src": "644:28:18",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IAureusToken_$2624",
+                        "typeIdentifier": "t_contract$_IAureusToken_$2634",
                         "typeString": "contract IAureusToken"
                       }
                     },
-                    "src": "627:44:18",
+                    "src": "628:44:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IAureusToken_$2624",
+                      "typeIdentifier": "t_contract$_IAureusToken_$2634",
                       "typeString": "contract IAureusToken"
                     }
                   },
-                  "id": 2644,
+                  "id": 2654,
                   "nodeType": "ExpressionStatement",
-                  "src": "627:44:18"
+                  "src": "628:44:18"
                 }
               ]
             },
-            "functionSelector": "04cbdfb9",
-            "id": 2646,
+            "functionSelector": "796b89ec",
+            "id": 2656,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": [],
-                "id": 2637,
+                "id": 2647,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 2636,
+                  "id": 2646,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
-                  "src": "605:9:18"
+                  "src": "606:9:18"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "605:11:18"
+                "src": "606:11:18"
               }
             ],
-            "name": "setCurrencyAddres",
-            "nameLocation": "556:17:18",
+            "name": "setCurrencyAddress",
+            "nameLocation": "556:18:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2635,
+              "id": 2645,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2634,
+                  "id": 2644,
                   "mutability": "mutable",
                   "name": "_aureusAddress",
-                  "nameLocation": "582:14:18",
+                  "nameLocation": "583:14:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2646,
-                  "src": "574:22:18",
+                  "scope": 2656,
+                  "src": "575:22:18",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2061,10 +2061,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2633,
+                    "id": 2643,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "574:7:18",
+                    "src": "575:7:18",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2074,40 +2074,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "573:24:18"
+              "src": "574:24:18"
             },
             "returnParameters": {
-              "id": 2638,
+              "id": 2648,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "617:0:18"
+              "src": "618:0:18"
             },
-            "scope": 2716,
-            "src": "547:132:18",
+            "scope": 2726,
+            "src": "547:133:18",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 2659,
+              "id": 2669,
               "nodeType": "Block",
-              "src": "756:71:18",
+              "src": "757:71:18",
               "statements": [
                 {
                   "expression": {
-                    "id": 2657,
+                    "id": 2667,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 2653,
+                      "id": 2663,
                       "name": "deflyTokenAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2632,
-                      "src": "765:17:18",
+                      "referencedDeclaration": 2642,
+                      "src": "766:17:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                         "typeString": "contract IFlyerOwnership"
@@ -2118,12 +2118,12 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 2655,
+                          "id": 2665,
                           "name": "_deflyTokenAddress",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2648,
-                          "src": "801:18:18",
+                          "referencedDeclaration": 2658,
+                          "src": "802:18:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -2137,18 +2137,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 2654,
+                        "id": 2664,
                         "name": "IFlyerOwnership",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 2429,
-                        "src": "785:15:18",
+                        "src": "786:15:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_contract$_IFlyerOwnership_$2429_$",
                           "typeString": "type(contract IFlyerOwnership)"
                         }
                       },
-                      "id": 2656,
+                      "id": 2666,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2156,61 +2156,61 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "785:35:18",
+                      "src": "786:35:18",
                       "tryCall": false,
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                         "typeString": "contract IFlyerOwnership"
                       }
                     },
-                    "src": "765:55:18",
+                    "src": "766:55:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                       "typeString": "contract IFlyerOwnership"
                     }
                   },
-                  "id": 2658,
+                  "id": 2668,
                   "nodeType": "ExpressionStatement",
-                  "src": "765:55:18"
+                  "src": "766:55:18"
                 }
               ]
             },
             "functionSelector": "26a4e8d2",
-            "id": 2660,
+            "id": 2670,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": [],
-                "id": 2651,
+                "id": 2661,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 2650,
+                  "id": 2660,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
-                  "src": "745:9:18"
+                  "src": "746:9:18"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "745:11:18"
+                "src": "746:11:18"
               }
             ],
             "name": "setTokenAddress",
-            "nameLocation": "694:15:18",
+            "nameLocation": "695:15:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2649,
+              "id": 2659,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2648,
+                  "id": 2658,
                   "mutability": "mutable",
                   "name": "_deflyTokenAddress",
-                  "nameLocation": "718:18:18",
+                  "nameLocation": "719:18:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2660,
-                  "src": "710:26:18",
+                  "scope": 2670,
+                  "src": "711:26:18",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2218,10 +2218,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2647,
+                    "id": 2657,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "710:7:18",
+                    "src": "711:7:18",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2231,25 +2231,25 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "709:28:18"
+              "src": "710:28:18"
             },
             "returnParameters": {
-              "id": 2652,
+              "id": 2662,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "756:0:18"
+              "src": "757:0:18"
             },
-            "scope": 2716,
-            "src": "685:142:18",
+            "scope": 2726,
+            "src": "686:142:18",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 2714,
+              "id": 2724,
               "nodeType": "Block",
-              "src": "979:467:18",
+              "src": "980:467:18",
               "statements": [
                 {
                   "expression": {
@@ -2259,7 +2259,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 2681,
+                        "id": 2691,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2269,7 +2269,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 2673,
+                          "id": 2683,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2277,12 +2277,12 @@
                           "leftExpression": {
                             "arguments": [
                               {
-                                "id": 2670,
+                                "id": 2680,
                                 "name": "_tokenId",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2662,
-                                "src": "1024:8:18",
+                                "referencedDeclaration": 2672,
+                                "src": "1025:8:18",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -2297,18 +2297,18 @@
                                 }
                               ],
                               "expression": {
-                                "id": 2668,
+                                "id": 2678,
                                 "name": "deflyTokenAddress",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2632,
-                                "src": "997:17:18",
+                                "referencedDeclaration": 2642,
+                                "src": "998:17:18",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                                   "typeString": "contract IFlyerOwnership"
                                 }
                               },
-                              "id": 2669,
+                              "id": 2679,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -2316,13 +2316,13 @@
                               "memberName": "getPrice",
                               "nodeType": "MemberAccess",
                               "referencedDeclaration": 2400,
-                              "src": "997:26:18",
+                              "src": "998:26:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_uint256_$",
                                 "typeString": "function (uint256) view external returns (uint256)"
                               }
                             },
-                            "id": 2671,
+                            "id": 2681,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2330,7 +2330,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "997:36:18",
+                            "src": "998:36:18",
                             "tryCall": false,
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2340,18 +2340,18 @@
                           "nodeType": "BinaryOperation",
                           "operator": "==",
                           "rightExpression": {
-                            "id": 2672,
+                            "id": 2682,
                             "name": "_amount",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2664,
-                            "src": "1037:7:18",
+                            "referencedDeclaration": 2674,
+                            "src": "1038:7:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "997:47:18",
+                          "src": "998:47:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -2364,7 +2364,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 2680,
+                          "id": 2690,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2373,25 +2373,25 @@
                             "arguments": [
                               {
                                 "expression": {
-                                  "id": 2676,
+                                  "id": 2686,
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
                                   "referencedDeclaration": 4294967281,
-                                  "src": "1072:3:18",
+                                  "src": "1073:3:18",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_message",
                                     "typeString": "msg"
                                   }
                                 },
-                                "id": 2677,
+                                "id": 2687,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "sender",
                                 "nodeType": "MemberAccess",
-                                "src": "1072:10:18",
+                                "src": "1073:10:18",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_address",
                                   "typeString": "address"
@@ -2406,32 +2406,32 @@
                                 }
                               ],
                               "expression": {
-                                "id": 2674,
+                                "id": 2684,
                                 "name": "aureusAddress",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2629,
-                                "src": "1048:13:18",
+                                "referencedDeclaration": 2639,
+                                "src": "1049:13:18",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_IAureusToken_$2624",
+                                  "typeIdentifier": "t_contract$_IAureusToken_$2634",
                                   "typeString": "contract IAureusToken"
                                 }
                               },
-                              "id": 2675,
+                              "id": 2685,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "balanceOf",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2623,
-                              "src": "1048:23:18",
+                              "referencedDeclaration": 2633,
+                              "src": "1049:23:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                                 "typeString": "function (address) view external returns (uint256)"
                               }
                             },
-                            "id": 2678,
+                            "id": 2688,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2439,7 +2439,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "1048:35:18",
+                            "src": "1049:35:18",
                             "tryCall": false,
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2449,24 +2449,24 @@
                           "nodeType": "BinaryOperation",
                           "operator": ">=",
                           "rightExpression": {
-                            "id": 2679,
+                            "id": 2689,
                             "name": "_amount",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2664,
-                            "src": "1087:7:18",
+                            "referencedDeclaration": 2674,
+                            "src": "1088:7:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "1048:46:18",
+                          "src": "1049:46:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "src": "997:97:18",
+                        "src": "998:97:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2480,7 +2480,7 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 2667,
+                      "id": 2677,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -2488,13 +2488,13 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "989:7:18",
+                      "src": "990:7:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 2682,
+                    "id": 2692,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2502,185 +2502,46 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "989:106:18",
+                    "src": "990:106:18",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2683,
+                  "id": 2693,
                   "nodeType": "ExpressionStatement",
-                  "src": "989:106:18"
+                  "src": "990:106:18"
                 },
                 {
                   "expression": {
                     "arguments": [
                       {
                         "expression": {
-                          "id": 2687,
+                          "id": 2697,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 4294967281,
-                          "src": "1155:3:18",
+                          "src": "1156:3:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 2688,
+                        "id": 2698,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
-                        "src": "1155:10:18",
+                        "src": "1156:10:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         }
                       },
-                      {
-                        "arguments": [
-                          {
-                            "id": 2691,
-                            "name": "_tokenId",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 2662,
-                            "src": "1192:8:18",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_uint256",
-                              "typeString": "uint256"
-                            }
-                          }
-                        ],
-                        "expression": {
-                          "argumentTypes": [
-                            {
-                              "typeIdentifier": "t_uint256",
-                              "typeString": "uint256"
-                            }
-                          ],
-                          "expression": {
-                            "id": 2689,
-                            "name": "deflyTokenAddress",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 2632,
-                            "src": "1166:17:18",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
-                              "typeString": "contract IFlyerOwnership"
-                            }
-                          },
-                          "id": 2690,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "ownerOf",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2393,
-                          "src": "1166:25:18",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_address_$",
-                            "typeString": "function (uint256) view external returns (address)"
-                          }
-                        },
-                        "id": 2692,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "kind": "functionCall",
-                        "lValueRequested": false,
-                        "names": [],
-                        "nodeType": "FunctionCall",
-                        "src": "1166:35:18",
-                        "tryCall": false,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      },
-                      {
-                        "id": 2693,
-                        "name": "_amount",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 2664,
-                        "src": "1202:7:18",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        },
-                        {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        },
-                        {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      ],
-                      "expression": {
-                        "id": 2684,
-                        "name": "aureusAddress",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 2629,
-                        "src": "1130:13:18",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IAureusToken_$2624",
-                          "typeString": "contract IAureusToken"
-                        }
-                      },
-                      "id": 2686,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "memberName": "marketSend",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2616,
-                      "src": "1130:24:18",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
-                        "typeString": "function (address,address,uint256) external"
-                      }
-                    },
-                    "id": 2694,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "1130:80:18",
-                    "tryCall": false,
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 2695,
-                  "nodeType": "ExpressionStatement",
-                  "src": "1130:80:18"
-                },
-                {
-                  "expression": {
-                    "arguments": [
                       {
                         "arguments": [
                           {
@@ -2688,8 +2549,8 @@
                             "name": "_tokenId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2662,
-                            "src": "1297:8:18",
+                            "referencedDeclaration": 2672,
+                            "src": "1193:8:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -2708,8 +2569,8 @@
                             "name": "deflyTokenAddress",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2632,
-                            "src": "1271:17:18",
+                            "referencedDeclaration": 2642,
+                            "src": "1167:17:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                               "typeString": "contract IFlyerOwnership"
@@ -2723,7 +2584,7 @@
                           "memberName": "ownerOf",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": 2393,
-                          "src": "1271:25:18",
+                          "src": "1167:25:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_address_$",
                             "typeString": "function (uint256) view external returns (address)"
@@ -2737,7 +2598,146 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1271:35:18",
+                        "src": "1167:35:18",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 2703,
+                        "name": "_amount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2674,
+                        "src": "1203:7:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 2694,
+                        "name": "aureusAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2639,
+                        "src": "1131:13:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IAureusToken_$2634",
+                          "typeString": "contract IAureusToken"
+                        }
+                      },
+                      "id": 2696,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "marketSend",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2626,
+                      "src": "1131:24:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256) external"
+                      }
+                    },
+                    "id": 2704,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1131:80:18",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2705,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1131:80:18"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 2711,
+                            "name": "_tokenId",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2672,
+                            "src": "1298:8:18",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "id": 2709,
+                            "name": "deflyTokenAddress",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2642,
+                            "src": "1272:17:18",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
+                              "typeString": "contract IFlyerOwnership"
+                            }
+                          },
+                          "id": 2710,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "ownerOf",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 2393,
+                          "src": "1272:25:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_address_$",
+                            "typeString": "function (uint256) view external returns (address)"
+                          }
+                        },
+                        "id": 2712,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1272:35:18",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2746,37 +2746,37 @@
                       },
                       {
                         "expression": {
-                          "id": 2703,
+                          "id": 2713,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 4294967281,
-                          "src": "1307:3:18",
+                          "src": "1308:3:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 2704,
+                        "id": 2714,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
-                        "src": "1307:10:18",
+                        "src": "1308:10:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         }
                       },
                       {
-                        "id": 2705,
+                        "id": 2715,
                         "name": "_tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2662,
-                        "src": "1318:8:18",
+                        "referencedDeclaration": 2672,
+                        "src": "1319:8:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2799,18 +2799,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 2696,
+                        "id": 2706,
                         "name": "deflyTokenAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2632,
-                        "src": "1242:17:18",
+                        "referencedDeclaration": 2642,
+                        "src": "1243:17:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                           "typeString": "contract IFlyerOwnership"
                         }
                       },
-                      "id": 2698,
+                      "id": 2708,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2818,13 +2818,13 @@
                       "memberName": "marketSend",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 2409,
-                      "src": "1242:28:18",
+                      "src": "1243:28:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,address,uint256) external"
                       }
                     },
-                    "id": 2706,
+                    "id": 2716,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2832,27 +2832,27 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1242:85:18",
+                    "src": "1243:85:18",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2707,
+                  "id": 2717,
                   "nodeType": "ExpressionStatement",
-                  "src": "1242:85:18"
+                  "src": "1243:85:18"
                 },
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 2711,
+                        "id": 2721,
                         "name": "_tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2662,
-                        "src": "1430:8:18",
+                        "referencedDeclaration": 2672,
+                        "src": "1431:8:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2867,18 +2867,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 2708,
+                        "id": 2718,
                         "name": "deflyTokenAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2632,
-                        "src": "1402:17:18",
+                        "referencedDeclaration": 2642,
+                        "src": "1403:17:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_IFlyerOwnership_$2429",
                           "typeString": "contract IFlyerOwnership"
                         }
                       },
-                      "id": 2710,
+                      "id": 2720,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2886,13 +2886,13 @@
                       "memberName": "closeSale",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 2428,
-                      "src": "1402:27:18",
+                      "src": "1403:27:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256) external"
                       }
                     },
-                    "id": 2712,
+                    "id": 2722,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2900,40 +2900,40 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1402:37:18",
+                    "src": "1403:37:18",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2713,
+                  "id": 2723,
                   "nodeType": "ExpressionStatement",
-                  "src": "1402:37:18"
+                  "src": "1403:37:18"
                 }
               ]
             },
             "functionSelector": "d4b7eac3",
-            "id": 2715,
+            "id": 2725,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "exchange",
-            "nameLocation": "934:8:18",
+            "nameLocation": "935:8:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2665,
+              "id": 2675,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2662,
+                  "id": 2672,
                   "mutability": "mutable",
                   "name": "_tokenId",
-                  "nameLocation": "948:8:18",
+                  "nameLocation": "949:8:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2715,
-                  "src": "943:13:18",
+                  "scope": 2725,
+                  "src": "944:13:18",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2941,10 +2941,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2661,
+                    "id": 2671,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "943:4:18",
+                    "src": "944:4:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2954,13 +2954,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2664,
+                  "id": 2674,
                   "mutability": "mutable",
                   "name": "_amount",
-                  "nameLocation": "962:7:18",
+                  "nameLocation": "963:7:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2715,
-                  "src": "957:12:18",
+                  "scope": 2725,
+                  "src": "958:12:18",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2968,10 +2968,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2663,
+                    "id": 2673,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "957:4:18",
+                    "src": "958:4:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2980,27 +2980,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "942:28:18"
+              "src": "943:28:18"
             },
             "returnParameters": {
-              "id": 2666,
+              "id": 2676,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "979:0:18"
+              "src": "980:0:18"
             },
-            "scope": 2716,
-            "src": "925:521:18",
+            "scope": 2726,
+            "src": "926:521:18",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2717,
-        "src": "434:1017:18",
+        "scope": 2727,
+        "src": "434:1018:18",
         "usedErrors": []
       }
     ],
-    "src": "32:1420:18"
+    "src": "32:1421:18"
   },
   "compiler": {
     "name": "solc",
@@ -3008,7 +3008,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.6",
-  "updatedAt": "2022-04-08T22:01:34.962Z",
+  "updatedAt": "2022-04-09T15:53:29.019Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
