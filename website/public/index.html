@@ -29,8 +29,16 @@
                     <button v-on:click="createFlyer">Create the Flyer token of your Aircraft</button>
                 </div>
                 <div class="row">
-                    <p class="jumbotron">Get price of aircraft ID<input type="number" v-model="price_id"/></p>
+                    <p class="jumbotron">Change ID sale status<input type="number" v-model="sale_id"/></p>
+                    <button v-on:click="sellId">Change</button>
+                </div>
+                <div class="row">
+                    <p class="jumbotron">Get price of aircraft from ID<input type="number" v-model="price_id"/></p>
                     <button v-on:click="getPrice">Log the price in console</button>
+                </div>
+                <div class="row">
+                    <p class="jumbotron">Buy aircraft from ID<input type="number" v-model="buy_id"/></p>
+                    <button v-on:click="buy">Buy</button>
                 </div>
 
 
@@ -60,16 +68,17 @@
                                            price_input:"",
                                            buy_id:"",
                                            price_id:"",
+                                           sale_id:"",
                                       },
                            methods: {
                                           faucet: async function() {
                                                          console.log("appuyé")
-                                                         await (this.aureusFactory.methods.faucet().send({from: this.account}));
+                                                         await (this.aureusFactory.methods.faucet().send({from: ethereum.selectedAddress}));
                                                          await this.checkBalance();
                                                      },
                                           checkBalance:async function() {
                                                          console.log("appuyé");
-                                                         await (this.aureusFactory.methods.balanceOf(this.account).call()).then((result) => console.log(result));
+                                                         await (this.aureusFactory.methods.balanceOf(ethereum.selectedAddress).call()).then((result) => console.log(result));
                                                      },
                                           checkMetamask: function() {
                                                                  // Check if MetaMask is installed
@@ -103,24 +112,37 @@
                                            // only owner will be able to use this function
                                            ownerInitPermissions: async function(){
                                                            // Addresses initialisation for the marketplace
-                                                           await this.deFlyersMarket.methods.setCurrencyAddress(aureusfactoryAddresses[0]).send({from: this.account});
-                                                           await this.deFlyersMarket.methods.setTokenAddress(deflyersAddresses[0]).send({from: this.account});
+                                                           await this.deFlyersMarket.methods.setCurrencyAddress(aureusfactoryAddresses[0]).send({from: ethereum.selectedAddress});
+                                                           await this.deFlyersMarket.methods.setTokenAddress(deflyersAddresses[0]).send({from: ethereum.selectedAddress});
                                                            // Approve marketplace for token and currency
-                                                           await this.deFlyers.methods.manageMarket(deflyersmarketAddresses[0],true).send({from: this.account});
-                                                           await this.aureusFactory.methods.manageMarket(deflyersmarketAddresses[0],true).send({from: this.account});
+                                                           await this.deFlyers.methods.manageMarket(deflyersmarketAddresses[0],true).send({from: ethereum.selectedAddress});
+                                                           await this.aureusFactory.methods.manageMarket(deflyersmarketAddresses[0],true).send({from: ethereum.selectedAddress});
                                                        },
                                            createFlyer: async function(){
-                                                           logs = await this.deFlyers.methods.createFlyer(this.name_input,this.description_input,this.image_input,this.price_input).send({from: this.account});
+                                                           logs = await this.deFlyers.methods.createFlyer(this.name_input,this.description_input,this.image_input,this.price_input).send({from: ethereum.selectedAddress});
                                                            console.log(logs);
                                                            
                                                        },
                                            buy: async function(){
+                                                           this.price_id = this.buy_id;
+                                                           this.buy_price = await this.getPrice();
+                                                           console.log("buy price is ",this.buy_price);
+                                                           console.log("type is ", typeof this.buy_price);
+                                                           await this.aureusFactory.methods.loadTransaction(this.buy_price).send({from: ethereum.selectedAddress});
+                                                           await this.deFlyersMarket.methods.exchange(this.buy_id,this.buy_price).send({from: ethereum.selectedAddress});
+                                                           return await this.deFlyers.methods.flyerToOwner(this.buy_id).call();
+
 
 
                                                        },
                                            getPrice: async function(){
                                                            res = await this.deFlyers.methods.getPrice(this.price_id).call();
+                                                           console.log(typeof res);
                                                            console.log(res);
+                                                           return res;
+                                                       },
+                                           sellId: async function(){
+                                                           await this.deFlyers.methods.changeSaleStatus(this.sale_id).send({from : ethereum.selectedAddress});
                                                        },
  
                                                      
@@ -128,7 +150,6 @@
                                       },
                            beforeMount() {
                                           this.checkMetamask();
- 
                                       },
                        })
  
