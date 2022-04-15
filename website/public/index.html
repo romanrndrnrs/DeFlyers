@@ -15,31 +15,23 @@
                 
                 <div class="row">
                     <button v-on:click="connectMetamask">Connect to your Metamask account</button>
-                    <button v-on:click="checkBalance">Check your AURS Balance</button>
+                    <button v-on:click="updateBalance">Update your AURS Balance</button>
                     <button v-on:click="faucet">Load 5000 AURS on your balance</button>
                     <button v-on:click="ownerInitPermissions">Initialise the Market (Only owner !)</button>
 
                 </div>
+                <p>Balance: {{balance}} AURS</p>
+
                 <h3>Tokenize your Aircraft:<h3>
                 <div class="row">
                     <p class="jumbotron">Aircraft name: <input type="text" v-model="name_input"/></p>
                     <p class="jumbotron">Aircraft description: <input type="text" v-model="description_input"/></p>
-                    <p class="jumbotron">Aircraft image: <input type="text" v-model="image_input"/></p>
+                    
+                    <form class="form" id="formImage" action= "index.html"><p class="jumbotron">Aircraft image: <input type="file" id="fileImage" ></p></form>
                     <p class="jumbotron">Aircraft price (in AURS smallest unit): <input type="number" v-model="price_input"/></p>
                     <button v-on:click="createFlyer">Create the Flyer token of your Aircraft</button>
                 </div>
-                <div class="row">
-                    <p class="jumbotron">Change ID sale status<input type="number" v-model="sale_id"/></p>
-                    <button v-on:click="sellId">Change</button>
-                </div>
-                <div class="row">
-                    <p class="jumbotron">Get price of aircraft from ID<input type="number" v-model="price_id"/></p>
-                    <button v-on:click="getPrice">Log the price in console</button>
-                </div>
-                <div class="row">
-                    <p class="jumbotron">Buy aircraft from ID<input type="number" v-model="buy_id"/></p>
-                    <button v-on:click="buy">Buy</button>
-                </div>
+               </div>
 
 
             </div>
@@ -69,16 +61,18 @@
                                            buy_id:"",
                                            price_id:"",
                                            sale_id:"",
+                                           formVar: document.getElementById('formImage'),
+                                           balance: 0,
                                       },
                            methods: {
                                           faucet: async function() {
                                                          console.log("appuyé")
                                                          await (this.aureusFactory.methods.faucet().send({from: ethereum.selectedAddress}));
-                                                         await this.checkBalance();
+                                                         await this.updateBalance();
                                                      },
-                                          checkBalance:async function() {
+                                          updateBalance:async function() {
                                                          console.log("appuyé");
-                                                         await (this.aureusFactory.methods.balanceOf(ethereum.selectedAddress).call()).then((result) => console.log(result));
+                                                         await (this.aureusFactory.methods.balanceOf(ethereum.selectedAddress).call()).then((result) => this.balance = result);
                                                      },
                                           checkMetamask: function() {
                                                                  // Check if MetaMask is installed
@@ -101,6 +95,7 @@
                                                          this.accounts = await ethereum.request({ method: 'eth_requestAccounts' });
                                                          this.account = app.accounts[0];   
                                                          console.log(app.account);
+                                                         this.updateBalance();
                                                      },
                                           startApp: function(){
                                                          console.log(aureusfactoryAddresses);
@@ -119,6 +114,7 @@
                                                            await this.aureusFactory.methods.manageMarket(deflyersmarketAddresses[0],true).send({from: ethereum.selectedAddress});
                                                        },
                                            createFlyer: async function(){
+                                                           this.image_input = await this.getFile();
                                                            logs = await this.deFlyers.methods.createFlyer(this.name_input,this.description_input,this.image_input,this.price_input).send({from: ethereum.selectedAddress});
                                                            console.log(logs);
                                                            
@@ -144,14 +140,31 @@
                                            sellId: async function(){
                                                            await this.deFlyers.methods.changeSaleStatus(this.sale_id).send({from : ethereum.selectedAddress});
                                                        },
+                                           getFile: async function(){
+                                                            console.log(document.getElementById("fileImage").files[0]);
+                                                                const dataFichier = new FormData();
+                                                                dataFichier.append("fileImage",document.getElementById("fileImage").files[0])
+                                                                var dataS = {"3":6,"4":8};
+                                                                var res = fetch('/fichier', {
+                                                                    method:'POST',
+                                                                    body: dataFichier,
+                                                            
+                                                                            }).then(response => response.text());
+                                                           return res
+        
+                                                       }
  
                                                      
  
                                       },
                            beforeMount() {
-                                          this.checkMetamask();
+                                           this.checkMetamask();
                                       },
                        })
+            
+                  ethereum.on('accountsChanged', function (accounts) {
+                      app.updateBalance();
+                   });
  
         </script>
     </body>
