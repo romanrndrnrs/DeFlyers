@@ -63,8 +63,17 @@
                                            sale_id:"",
                                            formVar: document.getElementById('formImage'),
                                            balance: 0,
+                                           flyerLength: 0,
                                       },
                            methods: {
+                                           getFlyerJson: function(name,description,image,price,status_var,id){
+                                                           return {"title": "Asset Metadata","type": "object","properties": {"name": {"type": "string","description": name},"description": {"type": "string","description": description},"image": {"type": "string","description": "/images/" + image},"price": {"type": "string","description": price},"status":{"type":"string","description":status_var},"id":{"type":"string","description":id}}};
+                                                       },
+                                           updateFlyerLength: async function(){
+                                                           this.flyerLength = parseInt(await this.deFlyers.methods.getFlyerLength().call())
+
+
+                                                       },
                                           faucet: async function() {
                                                          console.log("appuyé")
                                                          await (this.aureusFactory.methods.faucet().send({from: ethereum.selectedAddress}));
@@ -102,6 +111,7 @@
                                                          this.deFlyers = new web3js.eth.Contract(deflyersABI,deflyersAddresses[0]);
                                                          this.deFlyersMarket = new web3js.eth.Contract(deflyersmarketABI,deflyersmarketAddresses[0]);
                                                          this.aureusFactory = new web3js.eth.Contract(aureusfactoryABI,aureusfactoryAddresses[0]);
+                                                         this.updateFlyerLength();
                                                      },
                                            
                                            // only owner will be able to use this function
@@ -116,6 +126,7 @@
                                            createFlyer: async function(){
                                                            this.image_input = await this.getFile();
                                                            logs = await this.deFlyers.methods.createFlyer(this.name_input,this.description_input,this.image_input,this.price_input).send({from: ethereum.selectedAddress});
+                                                           this.updateFlyerLength();
                                                            console.log(logs);
                                                            
                                                        },

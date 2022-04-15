@@ -23,13 +23,24 @@
                 <div class="row">
                     <p class="jumbotron">Change ID sale status<input type="number" v-model="sale_id"/><button v-on:click="sellId">Change</button></p>
                     
-                    <p class="jumbotron">Get price of aircraft from ID<input type="number" v-model="price_id"/><button v-on:click="getPrice">Log the price in console</button></p>
+                    <p class="jumbotron">Get price of aircraft from ID<input type="number" v-model="price_id"/><button v-on:click="getPrice(price_id)">Log the price in console</button></p>
                     
                     <p class="jumbotron">Buy aircraft from ID<input type="number" v-model="buy_id"/><button v-on:click="buy">Buy</button></p>
-                    <p class="jumbotron">Get image from ID<input type="number" v-model="image_id"/><button v-on:click="getImage">Get</button></p>
-                    
+                    <p class="jumbotron">Get image from ID<input type="number" v-model="image_id"/><button v-on:click="getImage(image_id)">Get</button></p>
+                                      
                 </div>
-                
+                <div class="row">
+                        <div class="col-3" v-for="(n,i) in flyerLength" >
+                            <p class="jumbotron">{{names[i]}} <br>
+                            <img v-bind:src="'/images/'+ images[i]" v-bind:alt="names[i]" width="200px" height="auto"><br>
+                            Description: {{descriptions[i]}}<br>
+                            Price: {{prices[i]}} AURS<br>
+                            On Sale: {{status_[i]}}</p>
+                        </div>
+
+
+
+                </div> 
             </div>
 
             
@@ -60,8 +71,20 @@
                                            formVar: document.getElementById('formImage'),
                                            balance: 0,
                                            image_id: "",
+                                           flyerLength: 0,
+                                           names:[],
+                                           descriptions:[],
+                                           images:[],
+                                           status_:[],
+                                           prices:[],
+
                                       },
                            methods: {
+                                           updateFlyerLength: async function(){
+                                                           this.flyerLength = parseInt(await this.deFlyers.methods.getFlyerLength().call())
+
+
+                                                       },
                                           faucet: async function() {
                                                          console.log("appuyé")
                                                          await (this.aureusFactory.methods.faucet().send({from: ethereum.selectedAddress}));
@@ -71,7 +94,7 @@
                                                          console.log("appuyé");
                                                          await (this.aureusFactory.methods.balanceOf(ethereum.selectedAddress).call()).then((result) => this.balance = result);
                                                      },
-                                          checkMetamask: function() {
+                                          checkMetamask: async function() {
                                                                  // Check if MetaMask is installed
                                                                  if (typeof window.ethereum !== 'undefined') {
                                                                      web3js = new Web3(window.ethereum);
@@ -86,7 +109,7 @@
                                                                  else {
                                                                      console.log("Please install MetaMask");
                                                                  }
-                                                                 this.startApp();
+                                                                 await this.startApp();
                                                      },
                                           connectMetamask: async function(){
                                                          this.accounts = await ethereum.request({ method: 'eth_requestAccounts' });
@@ -94,11 +117,13 @@
                                                          console.log(app.account);
                                                          this.updateBalance();
                                                      },
-                                          startApp: function(){
+                                          startApp: async function(){
                                                          console.log(aureusfactoryAddresses);
                                                          this.deFlyers = new web3js.eth.Contract(deflyersABI,deflyersAddresses[0]);
                                                          this.deFlyersMarket = new web3js.eth.Contract(deflyersmarketABI,deflyersmarketAddresses[0]);
                                                          this.aureusFactory = new web3js.eth.Contract(aureusfactoryABI,aureusfactoryAddresses[0]);
+                                                         await this.updateFlyerLength();
+                                                         await this.updateAllData();
                                                      },
                                            
                                            // only owner will be able to use this function
@@ -128,16 +153,50 @@
 
 
                                                        },
-                                           getPrice: async function(){
-                                                           res = await this.deFlyers.methods.getPrice(this.price_id).call();
-                                                           console.log(typeof res);
+                                           getPrice: async function(id){
+                                                           res = await this.deFlyers.methods.getPrice(id).call();
                                                            console.log(res);
                                                            return res;
                                                        },
-                                           getImage: async function(){
-                                                           res = await this.deFlyers.methods.flyers(this.image_id).call();
+                                           getImage: async function(id){
+                                                           res = await this.deFlyers.methods.flyers(id).call();
                                                            console.log(res.image);
-                                                           return res;
+                                                           return res.image;
+                                                       },
+                                           getName: async function(id){
+                                                           res = await this.deFlyers.methods.flyers(id).call();
+                                                           console.log(res.name);
+                                                           return res.name;
+                                                       },
+                                           getDesc: async function(id){
+                                                           res = await this.deFlyers.methods.flyers(id).call();
+                                                           console.log(res.description);
+                                                           return res.description;
+                                                       },
+                                           getStatus: async function(id){
+                                                           res = await this.deFlyers.methods.flyers(id).call();
+                                                           console.log(res.status);
+                                                           return res.status;
+                                                       },
+                                           updateAllData: async function(){
+                                                           this.updateFlyerLength();
+                                                           if(this.flyerLength > 0){
+
+                                                                this.names = [];
+                                                                this.descriptions = [];
+                                                                this.images = [];
+                                                                this.status_ = [];
+                                                                this.prices = [];
+                                                                for(i=0; i<this.flyerLength;i++){
+                                                                         this.names.push(await this.getName(i));
+                                                                         this.descriptions.push(await this.getDesc(i)) ;
+                                                                         this.images.push(await this.getImage(i));
+                                                                         this.status_.push(await this.getStatus(i));
+                                                                         this.prices.push(await this.getPrice(i));
+                                                                                
+
+                                                                            }
+                                                                       }
                                                        },
                                            sellId: async function(){
                                                            await this.deFlyers.methods.changeSaleStatus(this.sale_id).send({from : ethereum.selectedAddress});

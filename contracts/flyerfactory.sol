@@ -25,4 +25,8 @@ contract FlyerFactory is Ownable{
         ownerFlyerCount[msg.sender] += 1;
         emit NewFlyer(id,_name,_description,_image,_price);
     }
+
+    function getFlyerLength() external view returns(uint){
+        return flyers.length;
+    }
 }
