@@ -1,0 +1,51 @@
+.landing {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('landingPage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.bg-transparentDark {
+    background: rgba(37,37,37,.8);
+
+}
+
+.navContainer {
+    justify-content:center;
+}
+
+.navText {
+    color:white;
+}
+
+.h1Title {
+    color:white;
+    font-size:13em;
+
+}
+
+
+.buttonLanding{
+    font-size: 5em;
+    margin-left:5%;
+    margin-top:2%;
+    margin-right:5%;
+    background: rgba(24,24,24,.7);
+    padding-left:5%;
+    padding-right:5%;
+    border:none;
+}
+
+.slogan{
+    color:white;
+    text-align:center;
+
+}
+
+.landingSlogan {
+    margin-top:10vh;
+
+}
