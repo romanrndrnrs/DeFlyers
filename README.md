@@ -8,4 +8,15 @@ All mechanisms have been tested with Truffle and a deployment on testnets is pla
 The architecture of the app's smart contracts is divided in 3 parts: the marketplace system, the ERC-20 token (currency), the ERC-721 token ("flyers" or the proof of ownership of an aircraft).
 ### III. Website:
 The app is a 2-page website using Vue JS. For the moment all the pictures are saved server-side (locally at the moment as I have not deployed the website yet) but I will consider using NFT-storage or IPFS to store images to be able to publish the website on github pages without worrying about server-side behavior.
-![web design](https://github.com/ro)
+
+#### The original design done on Figma:
+![web design](website/webdesign.png)
+#### What the landing page currently looks like:
+![landing page](website/landing1.png)
+#### Scrolling down:
+![landing page](website/landing2.png)
+### IV. To do:
+-The second website page (marketplace listing)
+-Deploy to Testnets
+-Publish on GitHub Pages
+-Use NFT-storage or IPFS to store off-chain data
