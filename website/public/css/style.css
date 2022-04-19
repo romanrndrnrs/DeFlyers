@@ -9,12 +9,13 @@
 }
 
 .bg-transparentDark {
-    background: rgba(37,37,37,.8);
+    background: rgba(17,17,17,.95);
 
 }
 
 .navContainer {
     justify-content:center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navText {
@@ -24,28 +25,73 @@
 .h1Title {
     color:white;
     font-size:13em;
-
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
 }
 
 
 .buttonLanding{
     font-size: 5em;
     margin-left:5%;
-    margin-top:2%;
+    margin-top:3%;
     margin-right:5%;
-    background: rgba(24,24,24,.7);
+    background: rgba(24,24,24,.8);
     padding-left:5%;
     padding-right:5%;
+    border-radius:20px;
     border:none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
 }
 
 .slogan{
     color:white;
     text-align:center;
-
+    font-size:1.5em;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .landingSlogan {
     margin-top:10vh;
 
+}
+
+label {
+    font-size:20px;
+
+}
+
+small {
+    font-size:15px;
+    color:rgb(250,250,250);
+
+}
+
+
+html {
+    scroll-behavior:smooth;
+
+}
+
+
+
+.mainForm {
+    margin-top:5%;
+    margin-bottom:5%;
+    padding:3em;
+    border: 1px solid white;
+    border-radius:10px;
+    border-color:white;
+    color:white;
+    background-color:rgba(255,255,255,0.01);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#app {
+    background-color:rgb(17,17,17);
+
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
 }
