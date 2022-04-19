@@ -16,7 +16,7 @@ The app is a 2-page website using Vue JS. For the moment all the pictures are sa
 #### Scrolling down:
 ![landing page](website/landing2.png)
 ### IV. To do:
--The second website page (marketplace listing)
--Deploy to Testnets
--Publish on GitHub Pages
--Use NFT-storage or IPFS to store off-chain data
+- The second website page (marketplace listing)
+- Deploy to Testnets
+- Publish on GitHub Pages
+- Use NFT-storage or IPFS to store off-chain data
